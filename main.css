@@ -80,16 +80,48 @@ body{
 }
 .title{
     grid-area: r;
+    font-size: 72px;
+    color: #D6C5F0;
+    padding: 13px 0 0 16px;
+    filter: drop-shadow(0px 4px 77px rgba(0, 0, 0, 0.45));
+}
+.name{
+    background: radial-gradient(50% 50% at 50% 50%, #080018 0%, rgba(55, 16, 136, 0.93) 52.08%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 48px;
+    padding: 10px 20px 8px 9px;
 }
 .lorenzo{
     grid-area: f;
 }
 .vitaliy{
     grid-area: k;
+    text-align: end;
+    position: relative;
 }
+.vitaliy::before{
+    content: '&';
+    position: absolute;
+    bottom: -50px;
+    right: 340px;
+    font-size: 208px;
+
+    background: linear-gradient(0deg, #D6C5F0, #D6C5F0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .date{
     grid-area: d;
     font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+    color: #D6C5F0;
 }
 
 .twothirdgrid .right{
