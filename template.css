@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Outfit:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #23272F;
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    background-color: #374151;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+header p{
+    color: #209ECA;
+}
+
+aside{
+    height: calc(100vh - 40px);
+    width: 300px;
+    background-color: #D9D9D90a;
+    position: fixed;
+    top: 40px;
+}
+
+main{
+    width: calc(900px);
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    padding: 120px 0 0 210px;
+    color: white;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0 0 0 0;
+}
+.sub-title{
+    font-size: 28px;
+    font-weight: 700;
+    padding: 32px 0 0 0;
+}
+
+.text{
+    padding: 32px 0;
+    line-height: 155%;
+    font-weight: 500;
+}
+
+.image img{
+    border-radius: 16px;
+}
+
+.end-button{
+    width: 100%;
+    background-color: #1A4554;
+    margin: 0 0 500px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 16px;
+}
+
+.back{
+    background-color: #1A4554;
+    flex: 0.95;
+    color: #149ECA;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.45);
+}
+.back img{
+    padding: 0 15px 0 0;
+}
+.forward img{
+    padding: 0 0 0 15px;
+}
+.forward{
+    flex: 1.05;
+    color: white;
+    background: #1791BA;
+    border-radius: 8px;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.45), inset 0px 4px 18px rgba(255, 255, 255, 0.3);
+}
+
+.back, .forward{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+.forward:hover{
+    background-color: #1791BAa0;
+}
+.back:hover{
+    background-color: #ffffff00;
+}
+
+.end-button:has(.back:hover){
+    background-color: #1A4554a0;
+}
