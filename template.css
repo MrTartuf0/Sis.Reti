@@ -10,6 +10,20 @@
 body{
     background-color: #23272F;
 }
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #343A46;
+    border-radius: 100vw;
+    border: 2px solid #23272F;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 
 header{
     width: 100%;
@@ -33,9 +47,42 @@ header p{
 aside{
     height: calc(100vh - 40px);
     width: 300px;
-    background-color: #D9D9D90a;
     position: fixed;
     top: 40px;
+    padding: 64px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+aside a{
+    padding: 15px 20px 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    transition: .2s linear;
+    border-radius: 0 8px 8px 0;
+}
+aside a:hover{
+    background-color: #343A46;
+}
+aside .active{
+    background-color: rgba(23, 145, 186, 0.2);
+    color: #149ECA;
+}
+aside .active::after{
+    content: '';
+    background-color: #149ECA;
+    width: 8px;
+    height: 8px;
+    border-radius: 16px;
+    position: absolute;
+    top: 23px;
+    right:20px;
 }
 
 main{
@@ -43,8 +90,9 @@ main{
     position: absolute;
     top: 40px;
     left: 300px;
-    padding: 120px 0 0 210px;
+    padding: 64px 0 0 210px;
     color: white;
+    box-sizing: content-box;
 }
 
 .title{
@@ -66,12 +114,14 @@ main{
 
 .image img{
     border-radius: 16px;
+    width: 100%;
+    margin: 0 0 32px 0;
 }
 
 .end-button{
     width: 100%;
     background-color: #1A4554;
-    margin: 0 0 500px 0;
+    margin: 0 0 150px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,4 +170,22 @@ main{
 
 .end-button:has(.back:hover){
     background-color: #1A4554a0;
+}
+
+.box{
+    background-color: #343A46;
+    border-radius: 8px;
+    margin: 64px 0;
+    display: flex;
+    flex-direction: column;
+}
+.term{
+    font-size: 24px;
+    padding: 16px 24px;
+    font-weight: 700;
+    background-color: #1791BAa0;
+    border-radius: 8px 8px 0 0;
+}
+.def{
+    padding: 16px 24px 16px 40px;
 }

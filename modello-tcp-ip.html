@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modello TCP-IP</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <header>Relazione Realizzata da <p>&nbspVitaliy Didyk&nbsp</p> & <p>&nbspLorenzo Franceschini</p>.</header>
+    <aside>
+        <a href="modello-tcp-ip.html" class="active">Modello TCP/IP</a>
+        <a href="protocolli-tcp-ip.html">Protocolli TCP/IP<img src="./img/link.svg"></a>
+        <a href="#">Incapsulamento<img src="./img/link.svg"></a>
+    </aside>
+    <main>
+        <div class="title">
+            Modello TCP/IP
+        </div>
+        <div class="text">
+            Originariamente sviluppato negli anni 
+            '70 dalla DARPA (l'agenzia statunitense 
+            Defense Advanced Research Projects Agency), 
+            il modello TCP/IP era inizialmente un protocollo 
+            Internet come tanti altri. In seguito divenne il 
+            protocollo standard per ARPAnet, il predecessore 
+            della moderna rete Internet. Oggi, TCP/IP è lo 
+            standard globale per le comunicazioni Internet.
+        </div>
+        <div class="image">
+            <img src="./img/TCP-IP.webp" width="100%">
+        </div>
+        <div class="sub-title">
+            Perchè si chiama TCP/IP?
+        </div>
+        <div class="text">
+            Questo modello, cui venne dato il nome di Internet Protocol Suite, presenta 2 protocolli principali: <br>
+            -IP(Internet Protocol);<br>
+            -TCP(Trasmission Control Protocol)<br>
+            <br>
+            Proprio da tali protocolli deriva il nome TCP/IP che viene usato per identificare questa architettura di rete. 
+        </div>
+        <div class="sub-title">
+            Quali sono i livelli e come si confrontano con l’ISO/OSI?
+        </div>
+
+        <div class="text">
+            <p>Si basa su 4 livelli, a differenza dell’ISO/OSI che ne prevede 7.</p>
+            <p>1. due livelli in corrispondenza:</p>
+            <p>&emsp;a. il livello 3 ISO/OSI Rete con il livello Internet del TCP/IP</p> 
+            <p>&emsp;b. il livello 4 ISO/OSI Trasporto con il livello Trasporto del TCP/IP: hanno lo stesso nome, ma svolgono funzioni diverse;</p>
+            <p>2. il livello Internet si “Appoggia” sull’equivalente del livello 2 ISO/OSI, cioè i due livelli più bassi della pila OSI corrispondono a quello che in TCP viene chiamato livello host-rete;</p>
+            <p>3. in TCP/IP non sono previsti i livelli di prensentazione e sessione: le loro caretterestiche utili devono quindi essere implementate dall’applicazione</p>
+        </div>
+
+        <div class="image">
+            <img src="./img/confronto.png">
+        </div>
+
+        <div class="end-button">
+            <a class="back" href="./index.html">
+                <img src="./img/back.svg">
+                Indietro
+            </a>
+            <a class="forward" href="#">
+                Avanti
+                <img src="./img/forward.svg">
+            </a>
+        </div>
+    </main>
 </body>
 </html>
