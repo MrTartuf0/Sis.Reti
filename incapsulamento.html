@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="template.css">
+</head>
+<body>
+    <header>Relazione Realizzata da <p>&nbspVitaliy Didyk&nbsp</p> & <p>&nbspLorenzo Franceschini</p>.</header>
+    <aside>
+        <a href="./modello-tcp-ip.html">Modello TCP/IP <img src="./img/link.svg"></a>
+        <a href="./protocolli-tcp-ip.html">Protocolli TCP/IP<img src="./img/link.svg"></a>
+        <a href="./incapsulamento.html" class="active">Incapsulamento</a>
+    </aside>
+    <main>
+        <div class="title">
+            Incapsulamento
+        </div>
+        <div class="text">
+            Quando un'applicazione invia dei dati utilizzando l'architettura TCP/IP, questi segueono
+            un percorso "dall'alto verso il basso" attraverso tutti i livelli della pila fino a essere trasmessi
+            dal livello fisico; ogni livello aggiunge una serie di informazioni di controllo ai primi dati che 
+            riceve, gle header (intestazione), fino a giungere al livello di rete che, come abbiamo visto, 
+            oltre all'intestazione aggiunge anche alcuni dati in coda (il cosidetto trailer).
+        </div>
+        <div class="image">
+            <img src="./img/TCP-IP.png" width="100%">
+        </div>
+        <div class="sub-title">
+            Ricapitolando
+        </div>
+        
+        <div class="text" style="padding-bottom: 16px;">
+            1 - lo strato di applicazione aggiunge un'intestazione (header-app)
+            ai dati utente prima di passarli allo st rato di trasporto;
+        </div>
+        <div class="image">
+            <img src="./img/applicazione.png">
+        </div>
+
+        <div class="text" style="padding-bottom: 16px;">
+            2 - il protoccolo TCP (oppure UDP) dello stato di trasporto aggiunge anche'esso 
+            un'intestazione: l'unita di dati prende ora il nome di segmento e viene passato allo strato di rete;
+        </div>
+        <div class="image">
+            <img src="./img/trasporto.png">
+        </div>
+
+        <div class="text" style="padding-bottom: 16px;">
+            3 - lo strato di rete acclude a sua volta un'intestazione comprendente
+            l'indirizzo IP: a questo punto il dato assume la denominazione di datagramma IP;
+        </div>
+        <div class="image">
+            <img src="./img/internet.png">
+        </div>
+
+        <div class="text" style="padding-bottom: 16px;">
+            4 - questa unità di informazione viene infine passata ai livelli inferiori, dove lo strato
+            di collegamento aggiunge la propria intestazione (header) e una coda (trailer): siamo 
+            finalmente arrivati aalla trama (frame ethernet)
+        </div>
+        <div class="image">
+            <img src="./img/rete.png">
+        </div>
+
+        <div class="box">
+            <div class="term">
+                Imbustamento
+            </div>
+            <div class="def">
+                si intende l'insieme delle operazioni che ogni livello in spedizione
+                esegue aggiungendo i dati caratteristici del livello stesso (busta) per poi 
+                spedirli al livello sottostante.
+                In ricezione ogni livello acquisisce quindi una "busta" contenente dati, grazie alla 
+                quale è in grado di trattare i dati presenti al suo interno: ogni livello tratta come 
+                "dati grezzi" le informazioni ricevute dal livello superiore non distinguendo tra i dati originari
+                forniti dall'applicativo e gli header (intestazioni) aggiunti dai livelli che essi hanno già attraversato 
+            </div>
+        </div>
+
+        <div class="end-button">
+            <a class="back" href="./protocolli-tcp-ip.html">
+                <img src="./img/back.svg">
+                Indietro
+            </a>
+            <a class="forward" href="./indirizzi-ip.html">
+                Avanti
+                <img src="./img/forward.svg">
+            </a>
+        </div>
+    </main>
+</body>
+</html>

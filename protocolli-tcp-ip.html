@@ -10,9 +10,9 @@
 <body>
     <header>Relazione Realizzata da <p>&nbspVitaliy Didyk&nbsp</p> & <p>&nbspLorenzo Franceschini</p>.</header>
     <aside>
-        <a href="modello-tcp-ip.html">Modello TCP-IP <img src="./img/link.svg"></a>
-        <a href="#" class="active">Protocolli TCP-IP</a>
-        <a href="#">Incapsulamento<img src="./img/link.svg"></a>
+        <a href="./modello-tcp-ip.html">Modello TCP/IP <img src="./img/link.svg"></a>
+        <a href="./protocolli-tcp-ip.html" class="active">Protocolli TCP/IP</a>
+        <a href="./incapsulamento.html">Incapsulamento<img src="./img/link.svg"></a>
     </aside>
     <main>
         <div class="title" style="margin-bottom: 32px;">
@@ -21,30 +21,76 @@
         <div class="image">
             <img src="./img/protocols.png">
         </div>
-        <div class="sub-title">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptate!
-        </div>
-        <div class="text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta commodi quae eum corporis harum, tenetur magnam magni blanditiis perferendis doloribus repellendus, alias ipsa ex! Delectus tenetur excepturi tempora ratione placeat.
-            Dolores, velit mollitia accusamus similique, nisi iste rerum omnis alias porro delectus in? Minima, molestias tenetur! Quae aperiam officiis beatae nobis animi, quia quidem inventore? Id mollitia beatae minus culpa.
-            Facilis quo beatae neque quas optio rem omnis architecto commodi aut tenetur animi et inventore dolores quis eum quae velit quibusdam, officia consequuntur necessitatibus doloremque accusantium harum ab odio? Quia.
+
+        <style>
+            .protocolli > p{
+                padding: 12px 0;
+            }
+        </style>
+
+        <div class="box">
+            <div class="term">
+                Applicazione
+            </div>
+            <div class="def protocolli">
+                <p>
+                    <strong>DNS</strong> = Il Domain Name System (DNS) è la "guida telefonica" di Internet. Le persone accedono alle informazioni online tramite dei nomi di dominio
+                </p>
+                <p>
+                    <strong>FTP</strong> = File Transfer Protocol (FTP) è un protocollo usato per trasferire file tra computer su Internet. Si tratta di un protocollo basato sull'architettura client/server.
+                </p>
+                <p>
+                    <strong>HTTP</strong> = In telecomunicazioni e informatica l'HyperText Transfer Protocol (HTTP) (in italiano: protocollo di trasferimento ipertesto) è un protocollo a livello applicativo usato come principale sistema per la trasmissione d'informazioni sul web ovvero in un'architettura tipica client-server.
+                </p>
+                <p>
+                    <strong>TELNET</strong> = In informatica e telecomunicazioni Telnet (TErminaL NETwork, Terminale di rete) è un protocollo di rete, utilizzato tramite interfaccia a riga di comando per fornire all'utente sessioni di login remoto.
+                </p>
+            </div>
         </div>
 
         <div class="box">
             <div class="term">
-                Lorem Ipsum
+                Trasporto
             </div>
-            <div class="def">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, adipisci?
+            <div class="def protocolli">
+                <p>
+                    <strong>TCP</strong> = Il Transmission Control Protocol (TCP) è un protocollo di rete a pacchetto di livello di trasporto, appartenente alla suite di protocolli Internet, che si occupa di controllo della trasmissione ovvero rendere affidabile la comunicazione dati in rete tra mittente e destinatario. Definito nella RFC 9293, su di esso si appoggia gran parte delle applicazioni della rete Internet, è presente solo sui terminali di rete (host) e non sui nodiinterni di commutazione della rete di trasporto, implementato come strato software di rete all'interno del sistema operativo di un host,
+                </p>
+                <p>
+                    <strong>UDP</strong> = l'UDP è un protocollo di tipo connectionless, inoltre non gestisce il riordinamento dei pacchetti né la ritrasmissione di quelli persi, ed è perciò generalmente considerato di minore affidabilità. In compenso è molto rapido (non c'è latenza per riordino e ritrasmissione) ed efficiente per le applicazioni "leggere" o time-sensitive.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="term">
+                Rete
+            </div>
+            <div class="def protocolli">
+                <p>
+                    <strong>IP</strong> = Internet Protocol (IP) si occupa di indirizzamento/instradamento, per consentire la trasmissione dei dati, un device viene identificato in modo univoco attraverso l'indirizzo IP (IP address).
+                </p>
+                <p>
+                    <strong>ARP</strong> = l'Address Resolution Protocol (ARP), come specificato da RFC 826, si intende un protocollo di rete appartenente alla suite del protocollo internet (IP) versione 4 e operante a livello di accesso alla rete(livello collegamento se si considera nomenclatura ISO/OSI), il cui compito è fornire la "mappatura" tra l'indirizzo IP (32 bit - 4 byte) e l'indirizzo MAC (48 bit - 6 byte) corrispondente di un terminale in una rete locale ethernet.
+                </p>
+                <p>
+                    <strong>RARP</strong> = Reverse Address Resolution Protocol (RARP) è un protocollo usato per risalire all'indirizzo IP conoscendo l'indirizzo fisico (indirizzo MAC). È un protocollo della suite di protocolli Internet che opera a livello di accesso alla rete e che traduce gli indirizzi ethernet in indirizzi IP, quindi svolge in pratica l'operazione inversa rispetto al protocollo di risoluzione degli indirizzi (ARP).
+                </p>
+                <p>
+                    <strong>ICMP</strong> = l'Internet Control Message Protocol (ICMP) è un protocollo di servizio per reti a pacchetto che si occupa di trasmettere informazioni riguardanti malfunzionamenti, informazioni di controllo o messaggi tra i vari componenti di una rete di calcolatori.
+                </p>
+                <p>
+                    <strong>PROTOCOLLI DI ROUTING</strong> = Un protocollo di routing è un protocollo di rete relativo allo strato network che permette ai router di scambiarsi informazioni tra loro al fine dicostruire delle tabelle di routing permettendo così il corretto instradamento dei pacchetti
+                </p>
             </div>
         </div>
 
         <div class="end-button">
-            <a class="back" href="#">
+            <a class="back" href="modello-tcp-ip.html">
                 <img src="./img/back.svg">
                 Indietro
             </a>
-            <a class="forward" href="#">
+            <a class="forward" href="./incapsulamento.html">
                 Avanti
                 <img src="./img/forward.svg">
             </a>
