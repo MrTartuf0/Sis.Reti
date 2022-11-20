@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indirizzi Privati</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>Relazione Realizzata da <p>&nbspVitaliy Didyk&nbsp</p> & <p>&nbspLorenzo Franceschini</p>.</header>
+    <aside>
+        <a href="./modello-tcp-ip.html">Modello TCP/IP <img src="./img/link.svg"></a>
+        <a href="./protocolli-tcp-ip.html">Protocolli TCP/IP<img src="./img/link.svg"></a>
+        <a href="./incapsulamento.html">Incapsulamento<img src="./img/link.svg"></a>
+        <a href="./indirizzi-ip.html" >Indirizzi IP <img src="./img/link.svg"></a>
+        <a href="./indirizzi-ip.html" >Classi IP  <img src="./img/link.svg"></a>
+        <a href="./indirizzi-privati.html" class="active">Indirizzi Privati</a>
+
+
+    </aside>
+    <main>
+        <div class="title">
+            Classi IP
+        </div>
+        <div class="text">
+            A seconda del valore dei bit più significativi gli indirizzi IP sono sud-divisi in classi, 
+            che si differenziano in base alle dimensioni della rete. 
+            Le WAN hanno generalmente IP-address di classe A, mentre 
+            le LAN hanno IP-address di classe B o C. <BR></BR>
+            Oltre  che  per  il  prefisso,  le  varie  classi  di  
+            indirizzi si distinguono per la diversa ripartizione dei bit 
+            tra l’identificativo della rete locale (Net-ID) e quello della 
+            scheda di rete (Host-ID).
+        </div>
+
+        <div class="image">
+            <img src="./img/classi-ip.png" width="100%">
+        </div>
+
+        <div class="text">
+            È quindi necessario scegliere l’indirizzo di rete in funzione del numero di macchine 
+            che devono essere connesse: 
+            <br>
+            - <b>classe A</b>: sono indirizzi utilizzati in reti che hanno un numero cospicuo di host, 
+            in quanto il campo dell’Host-ID è di 24 bit e può pertanto identificare circa 
+            16 milioni di host. I 7 bit dedicati al Net-ID permettono di definire solo 128 
+            reti di classe A in tutto il mondo; 
+            <br>
+            - <b>classe B</b>: sono adatti per reti di dimensioni intermedie, 
+            dato che agli host sono dedicati circa 64.000 indirizzi e 
+            che sono disponibili circa 16.000 reti di questa dimensione 
+            (14 bit di indirizzo di rete); 
+            <br>
+            - <b>classe C</b>: sono i più utilizzati e permettono di definire reti 
+            di non più di 256 host; nonostante questa limitazione, 
+            il numero delle reti è elevato dato che vengono usati 21 
+            bit nel Net-ID; 
+            <br>
+            - <b>classe D</b> : sono dedicati al multicasting (RFC 1112); 
+            <br>
+            - <b>classe E</b>: sono riservati per usi futuri
+        </div>
+
+        <div class="image">
+            <img src="./img/range-classi.png">
+        </div>
+
+
+        <div class="box">
+            <div class="term">Indirizzi di Broadcast</div>
+            <div class="def">
+                Se vogliamo trasmettere un messaggio a tutti i PC di 
+                sottorete basta porre uguali a 1 tutti i bit dell’indirizzo 
+                di host: ogni macchina riconosce questo   messaggio   
+                come   messaggio   di   broadcast e ne legge il contenuto. 
+                Per estrarre l’indirizzo di rete da un indirizzo IP è 
+                sufficiente porre uguale a 0 l’indirizzo dell’host.
+            </div>
+        </div>
+
+        <div class="sub-title">
+            Indirizzi Riservati
+        </div>
+
+        <div class="text">
+            -0.0.0.0  indica  l’host  corrente  senza  specificarne  l’indi-rizzo; 
+            <br>
+            -255.255.255.255 è l’indirizzo di limited  broad cast; 
+            <br>
+            -127.x.y.z  è  il  loopback,  che  ridirige  i  datagrammi  agli  strati superiori dello stesso host; 
+            <br>
+            -169.254.x.y  è  riservato  per  l’autoconfigurazione  degli  host.
+        </div>
+
+        <div class="image">
+            <img src="./img/indirizzi-bloccati.png">
+        </div>
+
+       
+        
+
+        <div class="end-button">
+            <a class="back" href="./classi-ip.html">
+                <img src="./img/back.svg">
+                Indietro
+            </a>
+            <a class="forward" href="#">
+                Avanti
+                <img src="./img/forward.svg">
+            </a>
+        </div>
+    </main>
+</body>
+</html>

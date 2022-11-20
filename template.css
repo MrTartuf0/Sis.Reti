@@ -189,3 +189,27 @@ main{
 .def{
     padding: 32px 24px 32px 40px;
 }
+
+
+@media only screen and (max-width: 1450px) {
+    main {
+        padding: 64px 32px 0 32px;
+        width: calc(100% - 300px);
+        box-sizing: border-box;
+    }
+  }
+
+  
+@media only screen and (max-width: 840px) {
+    header {
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    main {
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+  }
