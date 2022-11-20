@@ -10,8 +10,8 @@ VLSM e CIDR, forwarding diretto e indiretto con Esercizi pratici a vostro piacim
 - [x] Protocolli
 - [x] Indirizzi IP
 - [x] Classi IP
-- [ ] Indirizzi Privati
-- [ ] Subnetting
+- [x] Indirizzi Privati
+- [x] Subnetting
 - [ ] Subnetmask
 - [ ] numero di host e sottoreti
 - [ ] VLSM
