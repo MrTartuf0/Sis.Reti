@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero di Sottoreti & Numero di Host</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>Relazione Realizzata da <p>&nbspVitaliy Didyk</p>.</header>
+    <aside>
+        <a href="./modello-tcp-ip.html">Modello TCP/IP <img src="./img/link.svg"></a>
+        <a href="./protocolli-tcp-ip.html">Protocolli TCP/IP<img src="./img/link.svg"></a>
+        <a href="./incapsulamento.html">Incapsulamento<img src="./img/link.svg"></a>
+        <a href="./indirizzi-ip.html" >Indirizzi IP <img src="./img/link.svg"></a>
+        <a href="./classi-ip.html" >Classi IP  <img src="./img/link.svg"></a>
+        <a href="./indirizzi-privati.html">Indirizzi Privati<img src="./img/link.svg"></a>
+        <a href="./subnetting.html">Subnetting <img src="./img/link.svg"></a>
+        <a href="./subnetmask.html">Subnet Mask  <img src="./img/link.svg"></a>
+        <a href="./nhost-nsottoreti.html"  class="active">Numero di host e Sottoreti</a>
+        <a href="./vlsm.html">VLSM <img src="./img/link.svg"></a>
+        <a href="./forwarding.html">Forwarding <img src="./img/link.svg"></a>
+        <a href="./cidr.html">CIDR <img src="./img/link.svg"></a>
+
+
+    </aside>
+
+    <main>
+
+        <div class="sub-title">
+            Numero di host
+        </div>
+
+
+        <div class="box">
+            <p class="def">
+                Il numero massimo di host che una sottorete può contenere
+                è 2 <sup>n</sup> - 3 dove h è il numero 
+                di bit di Host-ID: due indirizzi vengono esclusi 
+                in quanto sono riservati all’indirizzo che identifica 
+                la sottorete stessa (tutti i bit a 0, “all 0”) e all’
+                indirizzo broadcast della sottorete (tutti i bit a 1, 
+                “all 1”).
+                <br>
+                <br>
+                Inoltre nelle sottoreti non isolate, almeno un 
+                indirizzo deve essere assegnato al Default Gateway, che 
+                è il di-spositivo (router) verso cui instradare tutto il 
+                traffico diretto al di fuori della sottorete; generalmente 
+                a esso si assegna come indirizzo quello precedente all’indirizzo di broadcast.
+            </p>
+        </div>
+
+        <div class="image">
+            <img src="./img/host.png">
+        </div>
+
+        <div class="sub-title">
+            Numero di Sottoreti
+        </div>
+
+        <div class="box">
+            <div class="def">
+                Calcoliamo il numero delle sottoreti possibili: in passato 
+                erano stati dichiarati riservati gli indirizzi composti da 
+                tutti 1 e tutti 0, per gli host come per i Subnet-ID, ma 
+                successivamente questo vincolo è stato tolto e ora viene 
+                consentito l’utilizzo di tutti i possibili Subnet-ID (RFC 1878); 
+                ne consegue che il numero delle sottoreti è direttamente calcolato 
+                da 2s, dove s è il numero di bit di Subnet-ID.
+            </div>
+        </div>
+
+        <a class="image" href="./img/CIDR-map.png">
+            <img src="./img/CIDR-map.png">
+        </a>
+
+        <a href="./img/CIDR-map.png" style="padding: 0 0 64px 0; display: block; color:#398EF2">
+            Clicca per vedere l'immagina a schermo intero
+        </a>
+
+
+        <div class="end-button">
+            <a class="back" href="./subnetmask.html">
+                <img src="./img/back.svg">
+                Indietro
+            </a>
+            <a class="forward" href="vlsm.html">
+                Avanti
+                <img src="./img/forward.svg">
+            </a>
+        </div>
+    </main>
+</body>
+</html>

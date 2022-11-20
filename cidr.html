@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLSM</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>Relazione Realizzata da <p>&nbspVitaliy Didyk</p>.</header>
+    <aside>
+        <a href="./modello-tcp-ip.html">Modello TCP/IP <img src="./img/link.svg"></a>
+        <a href="./protocolli-tcp-ip.html">Protocolli TCP/IP<img src="./img/link.svg"></a>
+        <a href="./incapsulamento.html">Incapsulamento<img src="./img/link.svg"></a>
+        <a href="./indirizzi-ip.html" >Indirizzi IP <img src="./img/link.svg"></a>
+        <a href="./classi-ip.html" >Classi IP  <img src="./img/link.svg"></a>
+        <a href="./indirizzi-privati.html">Indirizzi Privati<img src="./img/link.svg"></a>
+        <a href="./subnetting.html">Subnetting <img src="./img/link.svg"></a>
+        <a href="./subnetmask.html">Subnet Mask  <img src="./img/link.svg"></a>
+        <a href="./nhost-nsottoreti.html">Numero di host e Sottoreti<img src="./img/link.svg"></a>
+        <a href="./vlsm.html">VLSM  <img src="./img/link.svg"></a>
+        <a href="./forwarding.html">Forwarding <img src="./img/link.svg"></a>
+        <a href="./cidr.html"    class="active">CIDR</a>
+
+
+    </aside>
+
+    <main>
+
+        <div class="title">
+            CIDR
+        </div>
+
+        <div class="box">
+            <div class="def">
+                il CIDR permette di svincolarsi dal 
+                rigido meccanismo della di-visione 
+                in classi accorpando le reti secondo 
+                le diverse esigenze, in modo da formare 
+                un’unica super-rete (super-netting). 
+                Per poter realizzare le supernetting è 
+                però necessario avere a disposizione 
+                indirizzi contigui e definire una maschera 
+                che selezioni i bit che le due reti hanno 
+                in comune: questa maschera, che viene quindi 
+                utilizzata per identificare il Network-ID, 
+                prende il nome di maschera di supernetting. 
+                <br>
+                <br>
+                Vediamo un esempio: 
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="./img/esempio1.png">
+        </div>
+
+        <div class="text">
+            Analizzando il terzo byte osserviamo che 
+            le reti da aggregare sono 8, che vanno dall’
+            indirizzo 168 fino all’indirizzo 175, comprendendo
+             tutti gli indirizzi seguenti:
+        </div>
+
+        <div class="image">
+            <img src="./img/reti.png">
+        </div>
+
+        <div class="image">
+            <img src="./img/attenzione.png">
+        </div>
+
+
+
+        <div class="thanks">
+            <img src="./img/image.png" width="100%">
+        </div>
+
+
+        
+        <a class="back" href="./forwarding.html" style="border-radius: 8px; margin-bottom: 200px;">
+            <img src="./img/back.svg">
+            Indietro
+        </a>
+
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLSM</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>Relazione Realizzata da <p>&nbspVitaliy Didyk</p>.</header>
+    <aside>
+        <a href="./modello-tcp-ip.html">Modello TCP/IP <img src="./img/link.svg"></a>
+        <a href="./protocolli-tcp-ip.html">Protocolli TCP/IP<img src="./img/link.svg"></a>
+        <a href="./incapsulamento.html">Incapsulamento<img src="./img/link.svg"></a>
+        <a href="./indirizzi-ip.html" >Indirizzi IP <img src="./img/link.svg"></a>
+        <a href="./classi-ip.html" >Classi IP  <img src="./img/link.svg"></a>
+        <a href="./indirizzi-privati.html">Indirizzi Privati<img src="./img/link.svg"></a>
+        <a href="./subnetting.html">Subnetting <img src="./img/link.svg"></a>
+        <a href="./subnetmask.html">Subnet Mask  <img src="./img/link.svg"></a>
+        <a href="./nhost-nsottoreti.html">Numero di host e Sottoreti<img src="./img/link.svg"></a>
+        <a href="./vlsm.html">VLSM  <img src="./img/link.svg"></a>
+        <a href="./forwarding.html"   class="active">Forwarding</a>
+        <a href="./cidr.html">CIDR <img src="./img/link.svg"></a>
+
+
+    </aside>
+
+    <main>
+
+        <div class="title">
+            Forwarding
+        </div>
+
+        <div class="box">
+            <div class="def">
+                Una classificazione degli host può anche essere 
+                fatta in base al meccanismo di consegna di un pacchetto 
+                introducendo i concetti di destinazione diretta e indiretta, 
+                legati alla logica di routing.
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="term">Host Diretto</div>
+            <div class="def">
+                è una stazione collegata direttamente al segmento di rete dell’host d’origine.
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="term">Host Indiretto</div>
+            <div class="def">
+                è un host di destinazione situato su una rete diversa da quella dell’host di origine.
+            </div>
+        </div>
+
+        <div class="sub-title">
+            Forwarding Diretto
+        </div>
+
+        <div class="text">
+            quando la trasmissione 
+            di un IP datagram avviene tra due host connessi su una rete 
+            con lo stesso Net-ID e quindi non vengono coinvolti i router
+        </div>
+
+        <div class="image">
+            <img src="./img/diretto.png" alt="">
+        </div>
+
+        
+
+        <div class="sub-title">
+            Forwarding Indiretto
+        </div>
+
+        <div class="text">
+            invece nel forwarding indiretto i  datagram passano da un 
+            router all’altro finché non ne raggiungono uno che può 
+            trasmetterli direttamente al destinatario.
+        </div>
+
+        <div class="image">
+            <img src="./img/indiretto.png" alt="">
+        </div>
+
+    
+
+        <div class="box">
+            <div class="term">Hop</div>
+            <div class="def">
+                Hop(“salto”) è il termine usato nel routing 
+                per indicare un router o altro dispositivo 
+                di rete “attraversato” dai pacchetti trasmessi 
+                lungo la rotta verso un host di destina-zione: 
+                “distanza 10 hop” significa che tra mittente e 
+                destinatario 10 dispositivi hanno ritrasmesso 
+                il pacchetto 
+            </div>
+        </div>
+
+        <div class="end-button">
+            <a class="back" href="./vlsm.html">
+                <img src="./img/back.svg">
+                Indietro
+            </a>
+            <a class="forward" href="cidr.html">
+                Avanti
+                <img src="./img/forward.svg">
+            </a>
+        </div>
+        
+    </main>
+</body>
+</html>

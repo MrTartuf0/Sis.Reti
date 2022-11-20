@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLSM</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>Relazione Realizzata da <p>&nbspVitaliy Didyk</p>.</header>
+    <aside>
+        <a href="./modello-tcp-ip.html">Modello TCP/IP <img src="./img/link.svg"></a>
+        <a href="./protocolli-tcp-ip.html">Protocolli TCP/IP<img src="./img/link.svg"></a>
+        <a href="./incapsulamento.html">Incapsulamento<img src="./img/link.svg"></a>
+        <a href="./indirizzi-ip.html" >Indirizzi IP <img src="./img/link.svg"></a>
+        <a href="./classi-ip.html" >Classi IP  <img src="./img/link.svg"></a>
+        <a href="./indirizzi-privati.html">Indirizzi Privati<img src="./img/link.svg"></a>
+        <a href="./subnetting.html">Subnetting <img src="./img/link.svg"></a>
+        <a href="./subnetmask.html">Subnet Mask  <img src="./img/link.svg"></a>
+        <a href="./nhost-nsottoreti.html">Numero di host e Sottoreti<img src="./img/link.svg"></a>
+        <a href="./vlsm.html"   class="active">VLSM </a>
+        <a href="./forwarding.html">Forwarding <img src="./img/link.svg"></a>
+        <a href="./cidr.html">CIDR <img src="./img/link.svg"></a>
+
+
+    </aside>
+
+    <main>
+
+        <div class="title">
+            VLSM
+        </div>
+
+        <div class="text">
+            Abbiamo visto che dover utilizzare una subnet mask di lunghezza 
+            fissa per ogni indirizzo di rete pone un grosso limite al 
+            subnetting tradizionale: una volta scelta la subnet mask, 
+            si è vincolati a un numero fisso di sottoreti aventi tutte 
+            le stesse dimensioni, generalmente con un enorme spreco di 
+            indirizzi oltre a un’estrema rigidità in caso di evoluzioni 
+            della rete stessa, che potrebbe comportare il rifacimento
+             completo del piano di indirizza-mento se anche solo una 
+             subnet crescesse al di sopra del numero massimo di host previsti.
+
+        </div>
+
+        <div class="sub-title">
+            Esempio
+        </div>
+
+        <div class="text">
+            Poiché le tre reti R1, R2 e R3 necessitano solo di 2 indirizzi 
+            (più 2 di servizio), per esse si può utilizzare una sottorete 
+            con soltanto 2 bit di indirizzamento (11111100) e quindi con 
+            subnet mask 255.255.255.192 
+            <br>
+            (per esempio, indirizzi possibili 
+            sono 200.69.96.240/30, 200.69.96.244/30, 200.69.96.248/30). 
+            
+            <br>
+
+            La rete S1 ha 40 host indirizzati con 6 bit (terzo byte a 1100000): 
+            200.69.96.0/26.
+            <br>
+            La rete S2 ha 50 host indirizzati con 6 bit 
+            (terzo byte a 1100000): 200.69.96.64/26.
+            <br>
+            La rete S3 ha soli 
+            20 host e quindi bastano 5 bit per indirizzarli 
+            (terzo byte a 11100000): 200.69.96.128/27.
+
+            <br><br>
+
+            Ricapitolando, abbiamo assegnato:
+            <br>
+            LAN S1: 200.69.96.0/26
+            <br>
+            LAN S2: 200.69.96.64/26
+            <br>
+            LAN S3: 200.69.96.128/27
+            <br>
+            LINK R1: 200.69.96.240/30
+            <br>
+            LINK R2: 200.69.96.244/30
+            <br>
+            LINK R3: 200.69.96.248/30
+
+
+        </div>
+        
+        <div class="image">
+            <img src="./img/esempio.png">
+        </div>
+
+        <div class="end-button">
+            <a class="back" href="./nhost-nsottoreti.html">
+                <img src="./img/back.svg">
+                Indietro
+            </a>
+            <a class="forward" href="cidr.html">
+                Avanti
+                <img src="./img/forward.svg">
+            </a>
+        </div>
+    </main>
+</body>
+</html>
