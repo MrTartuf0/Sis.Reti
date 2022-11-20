@@ -196,6 +196,17 @@ main{
     border-left: 2px solid #ffffffa0;
 }
 
+.thanks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #06446A;
+    background-image: url(./img/visione.gif);
+    border-radius: 8px;
+    padding: 0 0 46px 0;
+    margin: 32px 0;
+}
+
 
 @media only screen and (max-width: 1450px) {
     main {
