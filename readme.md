@@ -5,10 +5,10 @@ VLSM e CIDR, forwarding diretto e indiretto con Esercizi pratici a vostro piacim
 
 ### TO DO List
 
-- [ ] Modello TCP/IP
+- [x] Modello TCP/IP
 - [x] Incapsulamento
 - [x] Protocolli
-- [x] Indirizzi IP
+- [ ] Indirizzi IP
 - [ ] Classi IP
 - [ ] Indirizzi Privati
 - [ ] Subnetting
