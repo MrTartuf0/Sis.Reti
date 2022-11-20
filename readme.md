@@ -14,6 +14,6 @@ VLSM e CIDR, forwarding diretto e indiretto con Esercizi pratici a vostro piacim
 - [x] Subnetting
 - [x] Subnetmask
 - [x] numero di host e sottoreti
-- [ ] VLSM
-- [ ] CIDR
-- [ ] Forwarding
+- [x] VLSM
+- [x] CIDR
+- [x] Forwarding
