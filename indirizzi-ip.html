@@ -4,49 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Indirizzi IP</title>
     <link rel="stylesheet" href="template.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>Relazione Realizzata da <p>&nbspVitaliy Didyk&nbsp</p> & <p>&nbspLorenzo Franceschini</p>.</header>
     <aside>
         <a href="./modello-tcp-ip.html">Modello TCP/IP <img src="./img/link.svg"></a>
-        <a href="./protocolli-tcp-ip.html" class="active">Protocolli TCP/IP</a>
+        <a href="./protocolli-tcp-ip.html">Protocolli TCP/IP<img src="./img/link.svg"></a>
         <a href="./incapsulamento.html">Incapsulamento<img src="./img/link.svg"></a>
-        <a href="./indirizzi-ip.html">Indirizzi IP<img src="./img/link.svg"></a>
+        <a href="./indirizzi-ip.html" class="active">Indirizzi IP</a>
     </aside>
     <main>
         <div class="title">
-            Lorem Ipsum
+            Struttura degli indirizzi IP
         </div>
         <div class="text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta commodi quae eum corporis harum, tenetur magnam magni blanditiis perferendis doloribus repellendus, alias ipsa ex! Delectus tenetur excepturi tempora ratione placeat.
-            Dolores, velit mollitia accusamus similique, nisi iste rerum omnis alias porro delectus in? Minima, molestias tenetur! Quae aperiam officiis beatae nobis animi, quia quidem inventore? Id mollitia beatae minus culpa.
-            Facilis quo beatae neque quas optio rem omnis architecto commodi aut tenetur animi et inventore dolores quis eum quae velit quibusdam, officia consequuntur necessitatibus doloremque accusantium harum ab odio? Quia.
+            Nelle reti TCP/IP a ogni host deve essere assegnato l’indirizzo IP; quest’ultimo, composto da 32 bit (4 byte), viene espresso scrivendo i valori decimali 
+            di ciascun byte da 0 a 255, separati dal carattere punto (rappresentazione dotted-decimal).Un esempio di indirizzo IP è il seguente:
         </div>
+
         <div class="image">
-            <img src="./img/TCP-IP.png" width="100%">
-        </div>
-        <div class="sub-title">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, voluptate!
-        </div>
-        <div class="text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta commodi quae eum corporis harum, tenetur magnam magni blanditiis perferendis doloribus repellendus, alias ipsa ex! Delectus tenetur excepturi tempora ratione placeat.
-            Dolores, velit mollitia accusamus similique, nisi iste rerum omnis alias porro delectus in? Minima, molestias tenetur! Quae aperiam officiis beatae nobis animi, quia quidem inventore? Id mollitia beatae minus culpa.
-            Facilis quo beatae neque quas optio rem omnis architecto commodi aut tenetur animi et inventore dolores quis eum quae velit quibusdam, officia consequuntur necessitatibus doloremque accusantium harum ab odio? Quia.
+            <img src="./img/indirizzo-ip.png" width="100%">
         </div>
 
         <div class="box">
             <div class="term">
-                Lorem Ipsum
+                N.B.
             </div>
             <div class="def">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, adipisci?
+                Utilizzando 32 bit il numero massimo teorico di indirizzi è 
+                dato da 2 <sup>32</sup> = 4.294.967.296 Possiamo osservare come questo 
+                numero sia relativamente basso, in quanto è impensabile 
+                che al mondo siano con-nessi “solo” poco più di 4 miliardi 
+                di calcolatori. Inoltre, come vedremo, non tutti gli indirizzi 
+                possono essere utilizzati, e quindi il numero risulta 
+                ancora più esiguo. Ricordiamo infine che non sono i nodi 
+                ad avere un indirizzo IP, bensì le interfacce: quindi se 
+                un nodo (per esempio un router) ha tre interfacce, esso 
+                è dotato di tre indirizzi IP.
             </div>
         </div>
 
+        <div class="text">
+            Per poter connettere il maggior numero di calcolatori utilizzando 
+            “solo” 32 bit sono state introdotte alcune tecniche particolari, 
+            che analizziamo di seguito. <br>
+            Per prima cosa si è “spezzato in due 
+            parti” l’indirizzo IP: <br>
+             - indirizzo di rete (Net-ID o Network-ID); <br>
+             - indirizzo dell’host (Host-ID)
+        </div>
+
+        <div class="image">
+            <img src="./img/NETID.png">
+        </div>
+
         <div class="end-button">
-            <a class="back" href="#">
+            <a class="back" href="./incapsulamento.html">
                 <img src="./img/back.svg">
                 Indietro
             </a>
