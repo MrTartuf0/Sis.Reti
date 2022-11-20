@@ -202,7 +202,7 @@ main{
     justify-content: center;
     background-color: #06446A;
     background-image: url(./img/visione.gif);
-    border-radius: 8px;
+    border-radius: 16px;
     padding: 0 0 46px 0;
     margin: 32px 0;
 }
