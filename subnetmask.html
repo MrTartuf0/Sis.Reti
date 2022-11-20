@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indirizzi Privati</title>
+    <title>Subnet Mask</title>
     <link rel="stylesheet" href="template.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>Relazione Realizzata da <p>&nbspVitaliy Didyk&nbsp</p> & <p>&nbspLorenzo Franceschini</p>.</header>
+    <header>Relazione Realizzata da <p>&nbspVitaliy Didyk</p>.</header>
     <aside>
         <a href="./modello-tcp-ip.html">Modello TCP/IP <img src="./img/link.svg"></a>
         <a href="./protocolli-tcp-ip.html">Protocolli TCP/IP<img src="./img/link.svg"></a>
@@ -19,6 +19,11 @@
         <a href="./indirizzi-privati.html">Indirizzi Privati<img src="./img/link.svg"></a>
         <a href="./subnetting.html"  >Subnetting <img src="./img/link.svg"></a>
         <a href="./subnetmask.html"  class="active">Subnet Mask </a>
+        <a href="./nhost-nsottoreti.html">Numero di host e Sottoreti <img src="./img/link.svg"></a>
+        <a href="./vlsm.html">VLSM <img src="./img/link.svg"></a>
+        <a href="./cidr.html">CIDR <img src="./img/link.svg"></a>
+        <a href="./forwarding.html">Forwarding <img src="./img/link.svg"></a>
+
 
 
     </aside>
@@ -26,21 +31,23 @@
     <main>
 
         <div class="title">
-            Subnetting
+            Subnet Mask
         </div>
 
 
         <div class="box">
-            <p class="def">Il subnetting  è  l’operazione  che  viene  effettuata  sul  campo host 
-                suddividendolo in due parti per organizzare la rete in parti più piccole: le sottoreti.
+            <p class="def">
+                La subnet mask è una sequenza di bit posti al valore 1 in corrispondenza dei bit dedicati al Network-ID e al Subnetwork-ID, mentre i bit che corrispondono all’Host-ID sono posti a 0.
             </p>
         </div>
 
-        <p class="text">Un esempio di indirizzo di classe B con subnetting è il seguente:</p>
+        <p class="text">
+            Un esempio di subnetmask è il seguente:
+        </p>
         
 
         <div class="image">
-            <img src="./img/subnetting.png">
+            <img src="./img/subnetmask.png">
         </div>
 
         <div class="text">
@@ -54,12 +61,40 @@
             - la seconda identifica il singolo host della sottorete (174).
         </div>
 
+        <div class="sub-title">
+            A che cosa serve la subnet mask?
+        </div>
+
+        <div class="box">
+            <p class="def">
+                La subnet mask permette di ricavare immediatamente 
+            l’indirizzo di rete da un indirizzo IP mediante un’opera-zione di AND 
+            bit a bit tra l’indirizzo IP e la maschera stessa.Consideriamo per 
+            esempio l’indirizzo IP di un host 10.40.80.3 con subnet mask 255.0.0.0. 
+            <br>
+            <br>
+            1. Scriviamo i due valori in binario:
+            <br>
+            2. ed eseguiamo l’operazione di AND bit a bit:
+            </p>
+        </div>
+
+        <div class="image">
+            <img src="./img/and-sub-net.png">
+        </div>
+
+        <div class="box">
+            <p class="def">
+                3. Otteniamo 10.0.0.0, che è l’indirizzo della rete di classe A sul quale è collegato l’host.
+            </p>
+        </div>
+
         <div class="end-button">
             <a class="back" href="./subnetting.html">
                 <img src="./img/back.svg">
                 Indietro
             </a>
-            <a class="forward" href="#">
+            <a class="forward" href="./nhost-nsottoreti.html">
                 Avanti
                 <img src="./img/forward.svg">
             </a>

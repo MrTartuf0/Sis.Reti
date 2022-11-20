@@ -111,6 +111,10 @@ main{
     line-height: 155%;
     font-weight: 500;
 }
+.image{
+    transition: .2s linear;
+
+}
 
 .image img{
     border-radius: 16px;
@@ -187,7 +191,9 @@ main{
     border-radius: 8px 8px 0 0;
 }
 .def{
-    padding: 32px 24px 32px 40px;
+    padding: 0 24px 0 20px;
+    margin: 32px 0 32px 20px;
+    border-left: 2px solid #ffffffa0;
 }
 
 
