@@ -8,8 +8,8 @@ VLSM e CIDR, forwarding diretto e indiretto con Esercizi pratici a vostro piacim
 - [x] Modello TCP/IP
 - [x] Incapsulamento
 - [x] Protocolli
-- [ ] Indirizzi IP
-- [ ] Classi IP
+- [x] Indirizzi IP
+- [x] Classi IP
 - [ ] Indirizzi Privati
 - [ ] Subnetting
 - [ ] Subnetmask
